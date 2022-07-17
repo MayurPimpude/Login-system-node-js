@@ -246,8 +246,8 @@ async function Emailsender(email){
         var transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'eventual274@gmail.com',
-                pass: 'hnauqvpjdiqwwovq'
+                user: 'gmail address',
+                pass: 'secret key'
             }
         });
     
@@ -256,7 +256,7 @@ async function Emailsender(email){
             console.log(otpp);
     
             const mailOptions = {
-                from: 'eventual274@gmail.com', // sender address
+                from: 'gmail address', // sender address
                 to: email, // list of receivers
                 subject: 'Verification code', // Subject line
                 html: `
